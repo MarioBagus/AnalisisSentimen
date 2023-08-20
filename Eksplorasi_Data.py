@@ -12,7 +12,7 @@ from wordcloud import WordCloud
 import matplotlib.pyplot as plt
 import nltk
 from nltk import FreqDist
-
+nltk.download('punkt')
 #import kata positive
 data_pos = pd.read_csv('other/positive.txt',header=None)
 list_pos = data_pos[0].tolist()
