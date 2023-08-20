@@ -18,15 +18,15 @@ import Eksplorasi_Data as ed
 import pandas as pd
 
 def import_model_3label():
-    import pickle5
-    token = pickle5.load(open('other/model_vektor_3label.sav','rb'))
-    model_load = pickle5.load(open('other/model_bilstm_1mei_10epoch.pkl','rb'))
+    import pickle
+    token = pickle.load(open('other/model_vektor_3label.sav','rb'))
+    model_load = pickle.load(open('other/model_bilstm_1mei_10epoch.pkl','rb'))
     return [token,model_load]
 
 def import_model_2label():
-    import pickle5
-    token = pickle5.load(open('other/model_vektor_2label.sav','rb'))
-    model_load = pickle5.load(open('other/model_LSTM_80persen_5Mei_epoch20.pkl','rb'))
+    import pickle
+    token = pickle.load(open('other/model_vektor_2label.sav','rb'))
+    model_load = pickle.load(open('other/model_LSTM_80persen_5Mei_epoch20.pkl','rb'))
     return [token,model_load]
 
 def tokenisasi(teks):
@@ -91,6 +91,7 @@ def predict_satu_teks(x,token,model_load,jmlh_label):
     print(x)
     x = [x]
     x = get_encode(x,token)
+    print('encode ' , x)
     #predict model
     label = ""  
     #lakukan prediksi model(model_load dari parameter function)
