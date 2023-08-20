@@ -165,8 +165,7 @@ def wordcloud(df):
         comment_words += " ".join(tokens_with_sw)+" "
      
     wordcloud = WordCloud(width = 800, height = 800,
-                    background_color ='white',
-                    min_font_size = 10).generate(comment_words)
+                    background_color ='white').generate(comment_words)
 
     # plot the WordCloud image                      
     plt.figure(figsize = (10, 10), facecolor = None)
