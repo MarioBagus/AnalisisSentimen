@@ -142,6 +142,7 @@ def tampilkan_prediksi_teks():
         if(input_text != ""):
             if(choose_model == "BiLSTM 3 label"): 
                 token,model_load = import_model_3label()
+                print(input_text)
                 label, predictX = predict_satu_teks(input_text,token,model_load,3)
             elif(choose_model == "BiLSTM 2 label"):
                 token,model_load = import_model_2label()
