@@ -4,8 +4,7 @@ plotly==5.9.0
 wordcloud==1.8.2.2
 matplotlib==3.7.1
 nltk==3.8.1
-tensorflow==2.11.0
-keras==2.11.0
+tensorflow.keras.preprocessing.sequence
 Sastrawi==1.0.1
 numpy==1.21.5
 regex==2022.7.9
