@@ -26,7 +26,7 @@ def import_model_3label():
 def import_model_2label():
     import pickle
     token = pickle.load(open('other/model_vektor_2label.sav','rb'))
-    model_load = pickle.load(open('other/model_LSTM_80persen_5Mei_epoch20.pkl','rb'))
+    model_load = pickle.load(open('other/CNN_2label_epoch_10.pkl','rb'))
     return [token,model_load]
 
 def tokenisasi(teks):
